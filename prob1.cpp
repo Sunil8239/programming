@@ -13,7 +13,7 @@ bool distinct(char* s,int start,int end)
    for(int i=start;i<=end;i++)
    {
    	   // cout<<s[i]<<endl;
-   	  if(a[s[i]-'A']!=0)
+   	  if(a[s[i]-'a']!=0)
    	   {
 
    	   	 return false;
@@ -21,7 +21,7 @@ bool distinct(char* s,int start,int end)
 
    	   else
    	   
-   	   a[s[i]-'A']=1;
+   	   a[s[i]-'a']=1;
    	   
    }
 
@@ -36,7 +36,7 @@ int main()
 
   int len=0;
 
-  bool k=false;
+  int k=false;
 
   char*s=(char*)malloc(1024*sizeof(char));
 
